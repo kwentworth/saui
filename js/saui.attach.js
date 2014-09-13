@@ -46,8 +46,8 @@ sauiLib.prototype = {
     	});
     	
     	
-     	
-	}
+   	
+   }
 }; // end of prototype
 
 
