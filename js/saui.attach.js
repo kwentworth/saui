@@ -40,16 +40,19 @@ sauiLib.prototype = {
 	},
 	
 	loader : function(options) {
+		var self = this;
     	var defaultOptions = {'scope' : document, 'ignoreScope' : false};
-        var options = $.extend(true, {}, defaultOptions, options); 
+        var options = jQuery.extend(true, {}, defaultOptions, options); 
         
-        $('.saui-ajax-loader', options.scope).each(function() {
-	    	$(this).sauiAjaxLoader();
+        console.log(options.scope);
+        
+        jQuery('.saui-ajax-loader', options.scope).each(function() {
+        	jQuery(this).sauiAjaxLoader();
 	    });
     	
     	// trigger an event so we know that reloaded has happened
     	// todo: migrate to this approach instead of _sauiLoader()
-    	$(options.scope).trigger('sauiTools:loader');
+        jQuery(options.scope).trigger('sauiTools:loader');
     },
     
 	attach : function() {
