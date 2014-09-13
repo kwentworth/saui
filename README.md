@@ -22,6 +22,7 @@ MIT
 Roadmap
 ------------
 * [RequireJS](http://requirejs.org/)
+* Exclusive use of jquery [pjax](https://github.com/defunkt/jquery-pjax) for all ajax content requests
 
 Contributing
 ------------
