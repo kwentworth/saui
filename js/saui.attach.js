@@ -64,7 +64,7 @@ sauiLib.prototype = {
 			//$thisLoader.append(sauiTools.$_loadingImage);
 		}
 		
-		if (typeof meta.source != "undefined" && meta.source.length && this.hasClass('saui-ajax-loader')) {
+		if (typeof meta.source != "undefined" && meta.source.length && $thisLoader.hasClass('saui-ajax-loader')) {
 			var newDate = new Date().getTime();
 			var actionUrl = meta.source + '?rnd_='+ newDate; ;
 			
@@ -90,8 +90,6 @@ sauiLib.prototype = {
 		var self = this;
     	var defaultOptions = {'scope' : document, 'ignoreScope' : false};
         var options = jQuery.extend(true, {}, defaultOptions, options); 
-        
-        console.log(options.scope);
         
         jQuery('.saui-ajax-loader', options.scope).each(function() {
         	self.ajaxLoader(this);
