@@ -38,10 +38,26 @@ sauiLib.prototype = {
 		// Strips leading and trailing white space
 		return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
 	},
+	
+	loader : function(options) {
+    	var defaultOptions = {'scope' : document, 'ignoreScope' : false};
+        var options = $.extend(true, {}, defaultOptions, options); 
+        
+        $('.saui-ajax-loader', options.scope).each(function() {
+	    	$(this).sauiAjaxLoader();
+	    });
+    	
+    	// trigger an event so we know that reloaded has happened
+    	// todo: migrate to this approach instead of _sauiLoader()
+    	$(options.scope).trigger('sauiTools:loader');
+    },
     
 	attach : function() {
     	var self = this;
     	jQuery(document).ready(function() {
+    		
+    		// fire off the first loader at the 
+    		self.loader(document);
     		
     	});
     	
@@ -49,6 +65,10 @@ sauiLib.prototype = {
    	
    }
 }; // end of prototype
+
+
+
+
 
 
 jQuery.fn.loadWith = function( url, callback ) {
