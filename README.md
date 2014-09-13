@@ -8,7 +8,12 @@ SAUI is the core JS interface library we use for Site Avenger CMS.  We hope some
 Installation
 -----------
 
-    include '//saui.siteavenger.com/saui/js/saui.attach.js' in any html file
+    include javascript file in any x/html application
+    
+Usage
+-----------
+
+	<script type="text/javascript" src="//saui.siteavenger.com/js/saui.attach.js" />
 
 License
 -----
