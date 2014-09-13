@@ -1,7 +1,7 @@
 saui
 =============
 
-SAUI is the core JS interface library we use for Site Avenger CMS.  We hope some of these features will have broad appeal to you and your projects. 
+SAUI is the core JS interface library we use for [Site Avenger CMS](http://www.siteavenger.com/).  We hope some of these features will have broad appeal to you and your projects. 
 
 
 
