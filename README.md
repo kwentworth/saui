@@ -17,8 +17,7 @@ Usage
 
 License
 -----
-
-    MIT
+MIT
 
 Roadmap
 ------------
