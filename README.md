@@ -33,5 +33,6 @@ Yes, please. More coming soon.
 
 function | called | description | usage
 ----|---------|------------|------------
+`attach` | attach | attaches the library on document.ready()  | saui.anyFunctionName();
 `ajaxLoader` | attach; manual | used to load content into a div | add .saui-ajax-loader class
 `loader` | attach; manual | used to load non-bindable javascript events | saui.loader(document);
