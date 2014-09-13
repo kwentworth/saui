@@ -15,6 +15,9 @@ License
 
     MIT
 
+Roadmap
+------------
+* [RequireJS](http://requirejs.org/)
 
 Contributing
 ------------
