@@ -27,4 +27,11 @@ Roadmap
 Contributing
 ------------
 
-See [Contributing](CONTRIBUTING.md)
+Yes, please. More coming soon.
+
+##### saui function overview
+
+function | usage | description
+----|---------|------------
+`ajaxLoader` | attach; manual | used to load content into a div
+`loader` | attach; manual | used to load non-bindable javascript events
