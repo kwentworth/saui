@@ -29,6 +29,9 @@ Contributing
 
 Yes, please. More coming soon.
 
+The Manual
+------------
+
 ##### saui function overview
 
 function | called | description | usage
