@@ -32,6 +32,6 @@ Yes, please. More coming soon.
 ##### saui function overview
 
 function | called | description | usage
-----|---------|------------
+----|---------|------------|------------
 `ajaxLoader` | attach; manual | used to load content into a div | add .saui-ajax-loader class
 `loader` | attach; manual | used to load non-bindable javascript events | saui.loader(document);
